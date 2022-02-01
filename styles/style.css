@@ -1,0 +1,170 @@
+/* PT Sans */
+@font-face{
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face{
+    font-family:"PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body{
+    font-family:"PT Sans",sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #E5E5E5;
+    color: #000000;
+}
+.header-top{
+    color:#000000;
+    background: #ffffff;
+}
+.navigation-link{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+.header-bottom{
+    color: #000000;
+    background-image: url(../images/index-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.header-bottom-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.header-bottom-subtitle{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333333;
+}
+.advantages-list{
+    text-align: center;
+}
+.advantages-list li:nth-child(1),
+.advantages-list li:nth-child(7){
+    color: #ffffff;
+    background-color: #83B3D3;
+}
+.advantages-list li:nth-child(1) h3,
+.advantages-list li:nth-child(7) h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-transform:uppercase;
+}
+.advantages-list li:nth-child(3),
+.advantages-list li:nth-child(5),
+.advantages-list li:nth-child(8),
+.advantages-list li:nth-child(10){
+    color: #333333;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-list li:nth-child(3) h4,
+.advantages-list li:nth-child(4) h4,
+.advantages-list li:nth-child(5) h4,
+.advantages-list li:nth-child(8) h3,
+.advantages-list li:nth-child(9) h3,
+.advantages-list li:nth-child(10) h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-transform:uppercase;
+}
+.advantages-list li:nth-child(4){
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.advantages-list li:nth-child(9){
+    color: #333333;
+    background: rgba(131, 179, 211, 0.2);
+}
+
+.search{
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+.search-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform:uppercase;
+}
+.search-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.search-link{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    background: #756257; 
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.newsletter{
+    background-image: url(/images/newsletter-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+.newsletter-title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.newsletter-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.newsletter-button{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #83B3D3 ;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.page-footer{
+    background-color: #ffffff;
+    font-weight: 400; 
+    text-transform: uppercase;
+}
+.page-footer a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer-contacts-adress-phone{
+    font-style: normal;
+    font-size: 40px;
+    line-height: 40px; 
+}
