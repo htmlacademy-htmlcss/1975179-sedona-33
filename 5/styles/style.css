@@ -132,7 +132,7 @@ body{
 }
 /* NEWSLETTER*/
 .newsletter{
-    background-image: url(/images/newsletter-background.jpg);
+    background-image: url(../images/newsletter-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: #ffffff;
@@ -189,7 +189,7 @@ body{
 }
 .inner-header{
     background-color:#E5E5E5;
-    background-image: url(/images/catalog-background.jpg);
+    background-image: url(../images/catalog-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     color:#ffffff;
@@ -285,7 +285,7 @@ body{
     text-decoration: none;
 }
 .catalog-card-star::before{
-    content: url(/images/star.svg);
+    content: url(../images/star.svg);
     background-repeat: no-repeat;
     background-size: 18px 16px;
 }
