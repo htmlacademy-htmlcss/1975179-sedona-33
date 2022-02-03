@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Гостиницы Седоны</title>
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
         <header class="page-header">
             <div class="header-top">
             <a class="header-top-link" href="index.html">
-                <img class="header-top-link-logo" src="/images/logo.svg" alt="Логоготип города Седона">
+                <img class="header-top-link-logo" src="images/logo.svg" alt="Логоготип города Седона">
             </a>
             <nav class="navigation">
                 <ul class="navigation-list">
@@ -101,31 +102,33 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <button class="button" type="submit">Применить</button>
-                    <button class="button button-reset" type="submit">Сбросиль</button>
+                    <button class="button button-apply" type="submit">Применить</button>
+                    <button class="button button-reset" type="submit">Сбросить</button>
                 </form>
             </section>
             </header>
             <section class="sorting">
-                <p class="sorting-result">Найдено страниц:38</p>
-                <select class="select-control" aria-label="Сортировка">
-                    <option selected value="popular">Сначала популярное</option>
-                    <option value="cheap">Сначала дешёвое</option>
-                    <option value="expensive">Сначала дорогое</option>
-                </select>
-                <a class="button border-dark" href="#">
-                    <span class="visually-hidden">Показать Карточки</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Показать полностью</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Показать Список</span>
-                </a>
+                <div class="sorting-conteiner">
+                    <p class="sorting-result">Найдено страниц: 38</p>
+                    <select class="select-control" aria-label="Сортировка">
+                        <option selected value="popular">Сначала популярное</option>
+                        <option value="cheap" selected>Сначала дешёвое</option>
+                        <option value="expensive">Сначала дорогое</option>
+                    </select>
+                    <a class="button border-dark" href="#">
+                        <span class="visually-hidden">Показать Карточки</span>
+                    </a>
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать полностью</span>
+                    </a>
+                    <a class="button" href="#">
+                        <span class="visually-hidden">Показать Список</span>
+                    </a>
+                </div>
                 <ul class="catalog-list">
                     <li class="catalog-card">
                         <a class="catalog-card-link" href="product.html">
-                            <img class="catalog-card-image" src="/images/Hotel/hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa">
+                            <img class="catalog-card-image" src="images/Hotel/hotel-1.jpg" width="299" height="206" alt="Amara Resort & Spa">
                             <h3 class="catalog-card-title">Amara Resort & Spa</h3>
                         </a>
                         <p class="catalog-card-group">Гостиница</p>
@@ -137,13 +140,12 @@
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <p class="catalog-card-rait">Рейтинг: <b>8,5</b></p>
+                            <p class="catalog-card-rait">Рейтинг: 8,5</p>
                         </div>
                     </li>
                     <li class="catalog-card">
                         <a class="catalog-card-link" href="product.html">
-                            <img class="catalog-card-image" src="/images/Hotel/hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn">
+                            <img class="catalog-card-image" src="images/Hotel/hotel-2.jpg" width="299" height="206" alt="Desert Quail Inn">
                             <h3 class="catalog-card-title">Desert Quail Inn</h3>
                         </a>
                         <p class="catalog-card-group">Гостиница</p>
@@ -154,14 +156,12 @@
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <p class="catalog-card-rait">Рейтинг: <b>8,9</b></p>
+                            <p class="catalog-card-rait">Рейтинг: 8,9</p>
                         </div>
                     </li>
                     <li class="catalog-card">
                         <a class="catalog-card-link" href="product.html">
-                            <img class="catalog-card-image" src="/images/Hotel/hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo">
+                            <img class="catalog-card-image" src="images/Hotel/hotel-3.jpg" width="299" height="206" alt="Villas at Poco Diablo">
                             <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
                         </a>
                         <p class="catalog-card-group">Гостиница</p>
@@ -171,15 +171,12 @@
                         <div class="catalog-card-stars">
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <p class="catalog-card-rait">Рейтинг: <b>9,2</b></p>
+                            <p class="catalog-card-rait">Рейтинг: 9,2</p>
                         </div>
                     </li>
                     <li class="catalog-card">
                         <a class="catalog-card-link" href="product.html">
-                            <img class="catalog-card-image" src="/images/Hotel/hotel-4.jpg" width="299" height="206" alt="GreenTree Inn">
+                            <img class="catalog-card-image" src="images/Hotel/hotel-4.jpg" width="299" height="206" alt="GreenTree Inn">
                             <h3 class="catalog-card-title">GreenTree Inn</h3>
                         </a>
                         <p class="catalog-card-group">Гостиница</p>
@@ -189,48 +186,47 @@
                         <div class="catalog-card-stars">
                             <span class="catalog-card-star"></span>
                             <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <span class="catalog-card-star"></span>
-                            <p class="catalog-card-rait">Рейтинг: <b>9,2</b></p>
+                            <p class="catalog-card-rait">Рейтинг: 9,2</p>
                         </div>
                     </li>
                 </ul>
                 <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-                <ul class="pagination">
-                    <li class="pagination-item">
-                        <a class="pagination-link pagination-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">4</a>
-                    </li>
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">...</a>
-                    </li> 
-                    <li class="pagination-item">
-                        <a class="pagination-link" href="#">10</a>
-                    </li> 
-                </ul>
-                <p class="sorting-card-list">Гостиниц на странице:</p>
-                <select class="select-control" aria-label="Сортировка">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option selected value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
+                <div class="sorting-container">
+                    <ul class="pagination">
+                        <li class="pagination-item">
+                            <a class="pagination-link pagination-current">1</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">4</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">...</a>
+                        </li> 
+                        <li class="pagination-item">
+                            <a class="pagination-link" href="#">10</a>
+                        </li> 
+                    </ul>
+                    <p class="sorting-card-list">Гостиниц на странице:</p>
+                    <select class="select-control" aria-label="Сортировка">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option selected value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
             </section>
-            <section class="newsletter">
+            <section class="newsletter newsletter-noimage">
                 <h2 class="visually-hidden">Рассылка</h2>
-                <p>Подпишитесь на рассылку</p>
-                <p>Только полезная информация и никакого спама,
+                <p class="newsletter-title">Подпишитесь на рассылку</p>
+                <p class="newsletter-text-noimage">Только полезная информация и никакого спама,
                 честное бойскаутское!</p>
                 <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post"> 
                 <label for="newsletter-email">Email</label>
@@ -267,7 +263,7 @@
                 </address>
             </div>
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-                <img class="htmlacademy-link-logo" src="/images/logo_htmlacademy.svg" width="115" height="34"  alt="Логотип Академии">
+                <img class="htmlacademy-link-logo" src="images/logo_htmlacademy.svg" width="115" height="34"  alt="Логотип Академии">
             </a>
         </footer>
     </body>
