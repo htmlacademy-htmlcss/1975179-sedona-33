@@ -31,47 +31,65 @@ body {
 }
 .main-container{
     flex-grow: 1;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .button{
+    color: #000000;
+    font-family: inherit; 
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 /* HEADER */
 .header-top {
     display: flex;
     max-width: 1060px;
-    margin: 0 auto;
+    margin: 0 auto ;
     font-family: "PT Sans", sans-serif;
     color: #000000;
     background: #ffffff;
+    height: 64px;
 }
 .header-top-link{
     margin-right: 30px ;
+}
+.header-top-link{
+    z-index: 2;
 }
 .navigation{
     display: flex;
     width: 891px;
 }
 .navigation-list{
+    display: flex;
+    flex-wrap: wrap;
     width: 430px;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 .navigation-user{
     max-width: 300px;
     margin-left: auto;
 }
-.button{
-    color: #000000;
-    font-family: inherit; 
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-}
 .navigation-link {
+    display: block;
     font-family: "PT Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -79,6 +97,29 @@ body {
     color: #000000;
     text-align: center;
     text-decoration: none;
+    padding: 20px 17px;
+}
+.navigation-user .navigation-list{
+    min-width: 16px;
+    min-height: 22px;
+}
+.navigation-item-button{
+    margin-left: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    background-color: #756257;
+    color: #ffffff;
+    width: 160px;
+    border-radius: 4px;
+}
+.navigation-link-button{
+    display: block;
+    padding: 9px 30px;
+    color: #ffffff;
+}
+.navigation-item-button + button{
+    font-size: 16px;
+    line-height: 20px;
 }
 .header-bottom-logo-container {
     color: #000000;
@@ -88,11 +129,15 @@ body {
 }
 
 .header-bottom-logo{
+    padding-top: 51px ;
+    padding-bottom: 82px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 63px;
 }
 .header-bottom-text{
     background-color:#ffffff;
+    max-width: 720px;
+    margin: 0 auto 81px;
 }
 .header-bottom-title {
     font-family: "PT Sans", sans-serif;
@@ -102,6 +147,7 @@ body {
     color: #000000;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 31px;
 }
 .header-bottom-subtitle {
     font-family: "PT Sans", sans-serif;
@@ -112,9 +158,60 @@ body {
     color: #333333;
 }
 /* MAIN*/
+
 .advantages-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 384px 384px 384px 384px;
+    max-width: 1200px ;
+    height: 1535px;
     text-align: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    align-content:center;
+}
+
+.advantages-item:first-child{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.advantages-item:nth-child(2){
+    grid-column: 2/-1;
+    grid-row: 1/2;
+}
+
+.advantages-item:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.advantages-item:nth-child(6){
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.advantages-title,
+.advantages-subtitle,
+.advantages-description{
+    margin: 0;
+    padding: 0;
+}
+.advantages-item:nth-child(3) img{
+    margin-top: 89px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.advantages-item:nth-child(4) img{
+    margin-top: 91px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.advantages-item:nth-child(5) img{
+    margin-top: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 .advantages-list li:nth-child(1),
 .advantages-list li:nth-child(7) {
@@ -129,6 +226,13 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     text-transform: uppercase;
+    max-width: 220px;
+    margin: 98px auto 30px;
+}
+.advantages-list li:nth-child(1) p,
+.advantages-list li:nth-child(7) p{
+    max-width: 220px;
+    margin: 0 auto 30px;
 }
 .advantages-list li:nth-child(3),
 .advantages-list li:nth-child(5),
@@ -139,15 +243,47 @@ body {
 }
 .advantages-list li:nth-child(3) h4,
 .advantages-list li:nth-child(4) h4,
-.advantages-list li:nth-child(5) h4,
-.advantages-list li:nth-child(8) h3,
-.advantages-list li:nth-child(9) h3,
-.advantages-list li:nth-child(10) h3 {
+.advantages-list li:nth-child(5) h4{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #000000;
     text-transform: uppercase;
+    max-width: 150px;
+    margin: 0 auto 19px
+}
+.advantages-list li:nth-child(3) p,
+.advantages-list li:nth-child(4) p,
+.advantages-list li:nth-child(5) p
+{
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-list li:nth-child(4) p,
+.advantages-list li:nth-child(5) p
+{
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-list li:nth-child(8) h3,
+.advantages-list li:nth-child(9) h3,
+.advantages-list li:nth-child(10) h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    text-transform: uppercase;
+    max-width: 150px;
+    margin: 97px auto 0px;
+}
+
+.advantages-list li:nth-child(8) p,
+.advantages-list li:nth-child(9) p,
+.advantages-list li:nth-child(10) p{
+    max-width: 250px;
+    margin: 30px auto;
 }
 .advantages-list li:nth-child(4) {
     color: #333333;
@@ -169,13 +305,17 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 91px auto 29px;
 }
 .search-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    max-width: 720px;
+    margin: 0 auto 56px;
 }
 .search-link {
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -183,6 +323,10 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
+    max-width: 575px;
+    padding: 15px 0 10px 0;
+    margin: 0 auto 93px;
+    border-radius: 10px;
 }
 /* NEWSLETTER*/
 .newsletter {
@@ -191,19 +335,26 @@ body {
     background-repeat: no-repeat;
     color: #ffffff;
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 85px;
 }
 .newsletter-title {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0 auto 29px;
 }
 .newsletter-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    max-width: 520px;
+    margin: 0 auto 45px;
+    align-items: center 
 }
 #newsletter-email {
+    display: inline-block;
     background-color: #f2f2f2;
     color: #000000;
     opacity: 0.6;
@@ -211,16 +362,29 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 18px;
+    padding: 21px 18px 19px 22px;
+    border: 0;
+    border-radius: 10px 0px 0px 10px;
+    width: 561px;
 }
 .newsletter-button {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 20px;
     background-color: #83b3d3;
     color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
+    padding: 19px 10px 24px 10px;
+    border: 0;
+    border-radius: 0px 10px 10px 0px;
+    width: 200px;
+    margin-left: -4px;
+    margin-bottom: 6px;
+    width: 200px;
+    vertical-align: middle;
 }
 /* FOOTER */
 .page-footer {
@@ -231,6 +395,8 @@ body {
     background-color: #ffffff;
     font-weight: 400;
     text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 .footer-social-list{
     list-style: none;
@@ -241,7 +407,7 @@ body {
 }
 .footer-social{
     width: 150px;
-    margin-right: 255px;
+    margin-right: 215px;
 }
 
 .footer-contacts-adress-phone {
@@ -252,6 +418,8 @@ body {
 .htmlacademy-link{
     margin-left: auto;
     max-width: 240px;
+    margin-top: 3px;
+    margin-right: 3px;
 }
 /* CATALOG.html*/
 .main-inner {
@@ -273,6 +441,7 @@ body {
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
+    margin: 0;
 }
 .breadcrumbs{
     display: flex;
