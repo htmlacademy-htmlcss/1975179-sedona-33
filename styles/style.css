@@ -99,7 +99,7 @@ body {
     text-decoration: none;
     padding: 20px 17px;
 }
-.navigation-user .navigation-list{
+.navigation-user .navigation-link{
     min-width: 16px;
     min-height: 22px;
 }
@@ -398,18 +398,31 @@ body {
     padding-top: 40px;
     padding-bottom: 30px;
 }
-.footer-social-list{
-    list-style: none;
-}
+
 .page-footer a {
     color: #000000;
     text-decoration: none;
 }
 .footer-social{
-    width: 150px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
     margin-right: 215px;
 }
-
+.footer-social-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .footer-social-item {
+    width: 18px;
+    height: 15px;
+  }
+  .footer-social-item:not(:last-child){
+    margin-right: 29px;
+  }
 .footer-contacts-adress-phone {
     font-style: normal;
     font-size: 40px;
@@ -427,6 +440,7 @@ body {
     color: #000000;
 }
 .inner-header {
+    padding-top: 36px;
     background-color: #e5e5e5;
     background-image: url(../images/catalog-background.jpg);
     background-size: 100% auto;
@@ -442,15 +456,17 @@ body {
     font-size: 60px;
     line-height: 78px;
     margin: 0;
+    padding: 0;
 }
 .breadcrumbs{
     display: flex;
-    list-style: none;
+    margin: 0;
+    padding: 0 0 37px;
+    list-style-type: none;
 }
-.breadcrumbs-item:first-child{
-    margin-right: 10px;
-}
+
 .breadcrumbs-link {
+    margin-right: 26px;
     font-size: 16px;
     line-height: 21px;
     text-decoration: none;
@@ -479,6 +495,9 @@ body {
     flex-direction: column;
     margin-left: auto; 
 }
+.catalog-filter-button{
+    justify-content: center;
+}
 .button-apply {
     font-family: "PT Sans";
     background-color: #83b3d3;
@@ -496,13 +515,21 @@ body {
     text-align: center;
     text-transform: none;
 }
-.sorting-conteiner {
+.sorting-container {
     display: flex;
     align-items: center;
     background-color: #ffffff;
     color: #000000;
     max-width: 1060px;
     margin: 0 auto;
+}
+.sorting-container .button{
+    width: 48px;
+    height: 48px;
+    
+}
+.sorting-container  a:not(:first-child){
+    margin-left: 8px;
 }
 .sorting-result {
     width: 340px;
@@ -512,11 +539,9 @@ body {
     font-size: 30px;
     line-height: 39px;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
     margin-right: 192px;
-}
-.sorting-button{
-    width: 160px;
-    margin-left: auto;
 }
 .select-control {
     color: #333333;
@@ -525,6 +550,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
+    height: 48px;
+    margin-right: auto;
 }
 .catalog-container{
     display: flex;
@@ -533,7 +560,9 @@ body {
     margin: 0 auto;
 }
 .catalog-list{
-    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 .catalog-card-link {
     color: #000000;
@@ -580,17 +609,8 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.sorting-container {
-    display: flex ;
-    background-color: #ffffff;
-    width: 1060px;
+.show-more-container{
     margin: 0 auto;
-}
-.pagination{
-    margin-right: 301px;
-}
-.select-control{
-    margin-left: auto;
 }
 .pagination-show-more {
     background-color: #83b3d3;
@@ -602,15 +622,35 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+.sorting-container{
+    display: flex;
+}
+.pagination{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 301px;
+    list-style-type: none;
+}
+.pagination-item:not(:last-child){
+    margin-right: 8px;
+}
+
 .pagination-item {
     background: #83b3d3;
+    border-radius: 4px;
 }
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    padding: 14px 14px;
+
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    display: flex;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
@@ -619,9 +659,21 @@ body {
     background-color: #f2f2f2;
     color: #000000;
 }
+.number-sorting{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
 .sorting-card-list,
-.select-control {
+.select-control-sorting {
+    margin: 0;
+    padding: 0;
     color: #333333;
+}
+.select-control-sorting{
+    margin-left: 51px;
+    padding: 13px 15px;
+    width: 160px;
 }
 .newsletter-noimage {
     color: #000000;
