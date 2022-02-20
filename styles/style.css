@@ -15,6 +15,7 @@
     font-display: swap;
 }
 /* INDEX.html */
+
 html{
     height: 100%;
 }
@@ -124,7 +125,7 @@ body {
 .header-bottom-logo-container {
     color: #000000;
     background-image: url(../images/index-background.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #e5e5e5;
 }
@@ -332,7 +333,7 @@ body {
 /* NEWSLETTER*/
 .newsletter {
     background-image: url(../images/newsletter-background.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #e5e5e5;
     color: #ffffff;
@@ -445,7 +446,7 @@ body {
     padding-top: 36px;
     background-color: #e5e5e5;
     background-image: url(../images/catalog-background.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     color: #ffffff;
 }
@@ -637,16 +638,24 @@ body {
 }
 .button-favorite{
     padding-left: 18px;
+    background-color: #7DB54F;
 }
 .catalog-card-stars-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.catalog-card-star::before {
-    content: url(../images/star.svg);
-    background-repeat: no-repeat;
-    background-size: 18px 16px;
+.catalog-card-stars  {
+    display: flex;
+    width: 118px;
+}
+.catalog-card-star{
+    background-image: url(../images/star.svg);
+    width: 18px;
+    height: 17px;
+}
+.catalog-card-star:not(:last-child){
+    margin-right: 7px;
 }
 .catalog-card-rait {
     display: inline;
@@ -681,7 +690,6 @@ body {
     border: none;
     border-radius: 4px;
 }
-
 .pagination-container{
     display: flex;
     margin: 30px auto 73px;
