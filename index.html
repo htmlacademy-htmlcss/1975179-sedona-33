@@ -194,23 +194,25 @@
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field-group">
               <label class="day-in" for="day-in">Дата заезда:</label> 
-              <input class="search-form-field" type="date" id="day-in" name="day-in" value="2020-04-27" min="2021-04-27" required>
+              <input class="search-form-field" type="text" id="day-in" name="day-in" value="27 апреля 2020" required>
+              <span class="field-calendar"></span>
               <span class="massage massage-error">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="field-group">
               <label class="day-out" for="day-out">Дата выезда:</label> 
-              <input class="search-form-field" type="date" id="day-out" name="day-out" value="2021-09-01" required>   
+              <input class="search-form-field" type="text" id="day-out" name="day-out" value="1 сентября 2021" required>
+              <span class="field-calendar"></span>   
               <span class="massage massage-success">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="field-group">
               <label class="grown" for="grown">Взрослые:</label>
-              <div class="button-number">
+              <div class="button-number-grow">
                 <button class="spin-button less" type="button"></button>
                 <input class="search-form-field-number" type="number" id="grown" name="grown" placeholder="2" min="1" max="100" required>
                 <button class="spin-button more" type="button"></button>
               </div>  
               <span class="child child-icon">
-                <label class="child" for="child">Дети: </label>
+                <label class="child " for="child">Дети: </label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                     <svg class="tooltip-icon" width="25" height="25" aria-hidden="true" focusable="false" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd"  d="M12 8h1v9h-1z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z" fill="#fff"/></g><defs><clipPath id="a"><path  transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg>
@@ -218,7 +220,7 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
               </span>
-              <div class="button-number">
+              <div class="button-number-child">
                 <button class="spin-button less" type="button"></button>
                 <input class="search-form-field-number" type="number" id="child" name="child" placeholder="1" min="0" max="100" required>
                 <button class="spin-button more" type="button"></button>
