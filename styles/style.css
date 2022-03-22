@@ -318,8 +318,8 @@ body {
   color: #ffffff;
   background-color: #83b3d3;
 }
-.advantages-list li:nth-child(1) h3,
-.advantages-list li:nth-child(7) h3 {
+.advantages-item:nth-child(1) h3,
+.advantages-item:nth-child(7) h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1470,7 +1470,7 @@ body {
   margin-bottom:40px;
   height: 50px;
 }
-.field-group label , input{
+.field-group label , .search-form-field, .search-form-field-number{
   font-family: "PT Sans",Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
