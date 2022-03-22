@@ -329,27 +329,27 @@ body {
   max-width: 220px;
   margin: 97px auto 30px;
 }
-.advantages-list li:nth-child(1) p,
-.advantages-list li:nth-child(7) p {
+.advantages-item:nth-child(1) p,
+.advantages-item:nth-child(7) p {
   max-width: 220px;
   margin: 0 auto;
 }
-.advantages-list li:nth-child(1) .advantages-description,
-.advantages-list li:nth-child(7) .advantages-description {
+.advantages-item:nth-child(1) .advantages-description,
+.advantages-item:nth-child(7) .advantages-description {
   margin-top: 30px;
   margin-bottom: 87px;
   box-sizing: border-box;
 }
-.advantages-list li:nth-child(3),
-.advantages-list li:nth-child(5),
-.advantages-list li:nth-child(8),
-.advantages-list li:nth-child(10) {
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(5),
+.advantages-item:nth-child(8),
+.advantages-item:nth-child(10) {
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
 }
-.advantages-list li:nth-child(3) h4,
-.advantages-list li:nth-child(4) h4,
-.advantages-list li:nth-child(5) h4 {
+.advantages-item:nth-child(3) h4,
+.advantages-item:nth-child(4) h4,
+.advantages-item:nth-child(5) h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -358,23 +358,23 @@ body {
   max-width: 150px;
   margin: 0 auto 19px;
 }
-.advantages-list li:nth-child(3) p,
-.advantages-list li:nth-child(4) p,
-.advantages-list li:nth-child(5) p {
+.advantages-item:nth-child(3) p,
+.advantages-item:nth-child(4) p,
+.advantages-item:nth-child(5) p {
   max-width: 180px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 88px;
 }
-.advantages-list li:nth-child(4) p,
-.advantages-list li:nth-child(5) p {
+.advantages-item:nth-child(4) p,
+.advantages-item:nth-child(5) p {
   max-width: 240px;
   margin-left: auto;
   margin-right: auto;
 }
-.advantages-list li:nth-child(8) h3,
-.advantages-list li:nth-child(9) h3,
-.advantages-list li:nth-child(10) h3 {
+.advantages-item:nth-child(8) h3,
+.advantages-item:nth-child(9) h3,
+.advantages-item:nth-child(10) h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -383,9 +383,9 @@ body {
   max-width: 150px;
   margin: 98px auto 30px;
 }
-.advantages-list li:nth-child(8) .advantages-description,
-.advantages-list li:nth-child(9) .advantages-description,
-.advantages-list li:nth-child(10) .advantages-description{
+.advantages-item:nth-child(8) .advantages-description,
+.advantages-item:nth-child(9) .advantages-description,
+.advantages-item:nth-child(10) .advantages-description{
   margin-top: 29px ;
   margin-bottom: 108px;
   max-width: 250px;
@@ -829,19 +829,19 @@ body {
   opacity: 0.3;
 }
 .range-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   background-color: transparent;
   box-sizing: border-box;
-  padding: 12px 30px 9px 17px;
+  padding: 12px 34px 9px 17px;
   width: 143px;
   color: #ffffff;
   appearance: textfield;
 }
-.catalog-filter-label:hover {
-  border-color: rgba(255, 255, 255, 0.3);
+.catalog-filter-label:hover  {
+  opacity: 0.6;
 }
 .range-input:focus {
   outline: 2px solid #81b3d2;
@@ -917,10 +917,8 @@ body {
 .catalog-filter-button {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
   margin-left: auto;
-}
-.catalog-filter-button {
-  justify-content: center;
 }
 .button-apply {
   font-family: "PT Sans", Arial, sans-serif;
@@ -992,7 +990,7 @@ body {
 }
 .sorting-result {
   width: 340px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1629,7 +1627,7 @@ body {
 .search-form-field-number::-webkit-inner-spin-button{
   display: none;
 }
-input[type=number] {
+.search-form-field-number[type=number] {
   -moz-appearance: textfield;
 }
 .button-number-grow{
@@ -1684,7 +1682,7 @@ input[type=number] {
   background-color: #83B3D3;
   border-radius: 10px;
   color: #ffffff;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
